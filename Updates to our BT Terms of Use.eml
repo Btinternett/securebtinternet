@@ -1,0 +1,374 @@
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=none;
+ b=PAfhJtUQy5SxZ36BDXLh1afE/RXb9Q5VavoBIJiLYfzf78sfPVU1AakHL6PXwkks3I/i6Ln68XJ1A85aEM7+OS04w2b0tk45J/pmmF3uhWnKxvTiFpYpDKmH9gsfkbMEVXA1SuzvU1IynDx0+Shm6LDI/CPkuBg0KFRY+Ulc+xhn/N7uikCpjRGBLZYQoNxweWbQzI/YXR2Oxrbjc1FFSn6RdHp8MuYIo3Z9B3wu9PcJ2eSwuwmOaCMMJs3YYNHqpyNjpOyAJVzBZR7A/cgUIfv9cQ2VKOLvyPfjh7u4uL1oFy4uOwHONe3mPHqj5SRI183fstAS/XG9P+asGJgwlA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=H4A+8FkVi0zPRkw3T0Ra1keXpat/twZjxjyPoq/MpI4=;
+ b=bPSEBLaUaMbOwiriyDWS9grrAlo0nCsbRszmsyRa6sII5oq33do+7ebTScvu34Uei/UXFVjycRn2MFdCz0reGA1YK2MtFPEesqQableTY4FdJKpX9JIBqkLr3GUErYZg9KjKJTiw2kPs4JtHzRSrmjCahrNK8isbCXYqXF5IVWpkozs/aQhLWVVXRuDhPsvkhnoYc/4vVNMyomoR2dXFUod4aklnyfMehtcEuzFPYQHahiF/AkkgKSmfrLtRLX06WXgxY603aLW05JWuFpPNKvuRVlra7vpWNGW+j1Z+4VVqXPy+g+qDjvOGQAtl3DkYpzRnNBRWE23Nf1mniniZJA==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=none; dmarc=none;
+ dkim=none; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=hotmail.com;
+ s=selector1;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=H4A+8FkVi0zPRkw3T0Ra1keXpat/twZjxjyPoq/MpI4=;
+ b=OC0toxVayd/yI84793Q3MtUgKKnXwnPo60f5ZH1IEy+rDUL/WbhNTS9DOXRjxokQ92+rPfSNT62Hf1t278zs+2qUp4ppLKyDB9X0LUODWfeJ4ZfRdMOwbKBvHUVY8Tgb20E8blyU8fEjlFVF9Pc9EIrYkUFTIDrm1U/RfesLEWMhIdSVK4sbVxUNfCzKSKTq6jojjr9Ygmxb+wmJHUmKAHgMTEmGtRLiKrh/Ca+64pHn2C54bRLDJ/RlcJUKhbdJISf7l36MtTkeFZs/5Lcu3iWI3t5Iy3rLR1CeVxdh4uUFZFUyd9J22/PACwIk5T8ojvWoN0ZTKsUCd7lDHfigiA==
+Received: from AM0PR09MB2259.eurprd09.prod.outlook.com (2603:10a6:208:e4::31)
+ by DBBPR09MB4681.eurprd09.prod.outlook.com (2603:10a6:10:207::20) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.5206.24; Tue, 3 May
+ 2022 15:14:26 +0000
+Received: from AM0PR09MB2259.eurprd09.prod.outlook.com
+ ([fe80::cf7:f729:e3e:bd1a]) by AM0PR09MB2259.eurprd09.prod.outlook.com
+ ([fe80::cf7:f729:e3e:bd1a%5]) with mapi id 15.20.5206.024; Tue, 3 May 2022
+ 15:14:26 +0000
+From: "BROAD BAND ." <broadband@btservice.com>
+Subject: Updates to our BT Terms of Use 
+Thread-Topic: Updates to our BT Terms of Use 
+Thread-Index: AQHYXwBzlfmj9XNtqk20+NWnwZzPKg==
+Date: Tue, 3 May 2022 15:14:26 +0000
+Message-ID: <AM0PR09MB22590FC11823E964F083DBF6D8C09@AM0PR09MB2259.eurprd09.prod.outlook.com>
+Accept-Language: en-GB, en-US
+Content-Language: en-GB
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+suggested_attachment_session_id: 1dd82f29-f87f-1ca8-2a9c-bff47a41070a
+x-tmn: [F4gMI3ct9LUYsG6JRH3ZEknpVbZLII+j]
+x-ms-publictraffictype: Email
+x-ms-office365-filtering-correlation-id: 3c2dd623-9392-4c1d-2587-08da2d179ce5
+x-ms-traffictypediagnostic: DBBPR09MB4681:EE_
+x-microsoft-antispam: BCL:0;
+x-microsoft-antispam-message-info: QhsC2RrvBng86Ll2qYwCETepL0cFMl9LTYOAYJUf4B/MBIHOj9adwky+7wwHCP0onYewfbzrTE0ypCsp34tHM6tWDL33uim0h1ERSrRiLUFgRUmzKvmtPBGf44whLXJ+3en4sFGhrnNbz+1lqQxbLDGcbjBlZ6ef+WmjltonFEZG8xhdCDnmrBW32i2w5hQUV8WhZiDzcEvU7QDI7rDL5BssMqIXEExnNDXRUjcqZx/pad0hBdk5NNJFkowNMX4Au46OfyggIgI55lIbuEKrgCNl2CxD0Mmmw4ZXrVbq0hSWwYqtNk7i190BMRs9rXlJ0DjIUSl3PnFKxEafOf8HlphHSkJm1O7VGgfx0b7ZijOmBtDe9XUZQLqb7pbjTV73CWd0oZpNKHQuJZpsJczeTezDtqUZ3wa4OhMhSDjU1L+dJx82mMopAHDUQ+/MMcK0B9y5eyAakPTAGKuwb2ljyxBGu6rfovKmgw8WtcB32I3q1ai69jNUdfuqCipnCKQ06a/1QrQtoq640kVySz1RgU0n2mNji3PckMaBQMXF3LHNWUe/NkAAOCz57V0IVhOHYZf2v34Tb4LFqwwqFIrxJ/a3E8Iay3cJRKZoXFGLuDP0YxevA5FbIhmT9Q+Ewrz+
+x-ms-exchange-antispam-messagedata-chunkcount: 1
+x-ms-exchange-antispam-messagedata-0: =?iso-8859-1?Q?BVGSRGSByKifiKRmt63WXcRk5XI1k1mADdpw3XXcq+eD4VfQTDCk6jeknI?=
+ =?iso-8859-1?Q?qVWu2Ls0ji37beCeHQGA1QJMHas4lqRiyknPWBwwjnDfPOfLi4ije3CsmU?=
+ =?iso-8859-1?Q?zQ1dJXbp9gaOZLaVc3xau5aXcU+nhnA54ap6OpdejXfknk4ks/RlDYx0Ej?=
+ =?iso-8859-1?Q?xYnK102fkGvubtTcKX1jfJkY/EoFfvn8SZS4l0uIwSZHTe0qrvKOK1rigM?=
+ =?iso-8859-1?Q?w/2S3cB4Grd2bY5pAbu0Iog/CEjN4oIn7j7dCJTQFh91yJt09SxqzHNh5S?=
+ =?iso-8859-1?Q?WZI6L78PjxTEXQHc04bkPK28JVHPuPzeQmMD/6n9+z76RcJtninjZu9Wst?=
+ =?iso-8859-1?Q?FTwgSQSjHR/XTfs9x16y0oR+V4Tana4gAahMGSSs8pttOFuoxhOvd4kPlC?=
+ =?iso-8859-1?Q?DWSYpeybY1jKFShqYyqZoxhXUnRAbFfHMhkAh2fjax9xgUvl2NqH12yW7V?=
+ =?iso-8859-1?Q?E59D3tw/gPyVIo3eSDUlQsdnBMbnTfx4CrpWK/xCbF63C6xc+QLik3e4Z0?=
+ =?iso-8859-1?Q?YUgknAVJrL/9M5RMYlc5d6E5nLXoT4DkgmTKHHhwQAR07n9Qp4xqPrIBTs?=
+ =?iso-8859-1?Q?2Dm0K7Chk7IIVy3sbHb0KWWWZm78Lq9PAS0AFIi88YwPM9+2lZ73+qQYv+?=
+ =?iso-8859-1?Q?0yAcqFUjEHsSu+38ZFgGr4AikluGwfy9y4Nr9Gvzg5/hA0gLTL3tknf4RO?=
+ =?iso-8859-1?Q?TO59LmxFQEZZtriCuuyuSTT/2GkbL06ZFXJvN4gWERxR5YR/Rq74IfY8Ce?=
+ =?iso-8859-1?Q?AXiAVX3wQdze/TMkkA2iuwAb5N8dYGcC46pP0ASR0M+/t/TbKdb7Ux9sfN?=
+ =?iso-8859-1?Q?Na2CG0JQlEVoKEdOpayahlH9q8pFhCE4ao1CUCSpsfh0UziyeQvLjwh0Ro?=
+ =?iso-8859-1?Q?W2W6DQ4PWreOmw/73A+TR3nDCZM1p2p7StxaBtZpFmJgvdj7utK1uwWk7o?=
+ =?iso-8859-1?Q?bNa0O9wyj01y55vsnZYpGdyfHwMrXO1S5B+oA3nbiQQ1rJVCcjmN3BIIic?=
+ =?iso-8859-1?Q?bOOeYeeE5dKhQr4khhBmwUWJKck6oNu10eWPNNheY+vFa4Wxus6WL0oXWL?=
+ =?iso-8859-1?Q?So2DOYjat+m8CRrGkpfXBoChsLxYnI95nY5PJ/HtnDoHVoO7Zm3VM2lT2J?=
+ =?iso-8859-1?Q?w6h3WU3YSz59Q8r+ygD3VSaE1MjCsY8ELKvl6CvCCE758CsCBcEfFPx70J?=
+ =?iso-8859-1?Q?8Pkwzb66KdAYM9UCH1khJGAjQ+Z+FkhaDJiYgzK5Ci1SwyB/v3dmklOFuE?=
+ =?iso-8859-1?Q?TJF6fNjkKCbTB3Rjz6lkzTFqN+p/oNCpf0ezTZi6RrzB+YvBHdq0A4IMZK?=
+ =?iso-8859-1?Q?tJjdaemj3HDm8pntzLGss0v7IzKkVCoMH9Xx1FXuVDsL/4E3X5L3HcD/sk?=
+ =?iso-8859-1?Q?Hs1IjDpl0ulq+y3Kjv+TCkQdE/XnPQvvU7nr2bWyuY9cB1hC3GgOdlJRhx?=
+ =?iso-8859-1?Q?GTLG4M+G/8X7mYULwMJ25lpwMDbcPQXOSJQmzb5VFon8/HD+uhMzPEbwGj?=
+ =?iso-8859-1?Q?M=3D?=
+Content-Type: multipart/alternative;
+	boundary="_000_AM0PR09MB22590FC11823E964F083DBF6D8C09AM0PR09MB2259eurp_"
+X-OriginatorOrg: sct-15-20-4755-11-msonline-outlook-64da6.templateTenant
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: AM0PR09MB2259.eurprd09.prod.outlook.com
+X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg: 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-CrossTenant-Network-Message-Id: 3c2dd623-9392-4c1d-2587-08da2d179ce5
+X-MS-Exchange-CrossTenant-originalarrivaltime: 03 May 2022 15:14:26.5951
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+X-MS-Exchange-CrossTenant-rms-persistedconsumerorg: 00000000-0000-0000-0000-000000000000
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DBBPR09MB4681
+MIME-Version: 1.0
+
+--_000_AM0PR09MB22590FC11823E964F083DBF6D8C09AM0PR09MB2259eurp_
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+
+
+  Updates to our BT Terms of Use
+
+
+
+
+
+Dear BT User
+
+
+
+
+
+We emailed you last month to let you know about changes we are making to ou=
+r Terms of Service and Privacy Policy. These changes are key steps towards =
+creating what's next for our consumers, like you, while empowering them wit=
+h transparency and controls over how and when their data is used.
+
+You can learn more about what these policies mean for you here, as well as =
+more about the changes in our FAQs.
+In order to continue to access your (BTINTERNET) Mail account after June 3rd=
+-2022, you will need to confirm you accept the Terms of Service. We also ne=
+ed a few moments of your time to explain how we manage your data and provid=
+e you with some choices in relation to the processing of that data.
+
+
+
+
+Click here to start<https://hjhjjhjk.weebly.com/>
+
+If you do not want the new Terms of Service and Privacy Policy to apply to =
+you, you will no longer be able to access your account from June 3rd 2022 .I=
+f you would like the contents of your email account, you may obtain a copy =
+of your data by clicking here.
+
+Thank you for your time and cooperation.
+
+
+
+Thanks for choosing BT Cloud Phone.
+
+
+
+The BT Corporate Mark is a registered trademark of British Telecommunicatio=
+ns plc.
+BT Cloud Phone is a trade mark of British Telecommunications plc.
+=A9 2021 RingCentral, Inc. All rights reserved.
+RingCentral and the RingCentral logo are trademarks of Ring
+
+
+--_000_AM0PR09MB22590FC11823E964F083DBF6D8C09AM0PR09MB2259eurp_
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-8859-=
+1">
+<style type=3D"text/css" style=3D"display:none;"> P {margin-top:0;margin-bo=
+ttom:0;} </style>
+</head>
+<body dir=3D"ltr">
+<div style=3D"font-family: Calibri, Helvetica, sans-serif; font-size: 12pt;=
+ color: rgb(0, 0, 0);" class=3D"elementToProof">
+<div style=3D"margin:0px">
+<div style=3D"margin:0px">
+<div style=3D"margin:0px">
+<div style=3D"margin:0px">
+<div align=3D"center" style=3D"margin:0px">
+<table width=3D"100%" style=3D"width:450.031px;border-collapse:collapse">
+<tbody>
+<tr>
+<td valign=3D"top" style=3D"font-family:Roboto, RobotoDraft, Helvetica, Ari=
+al, sans-serif;margin:0px;padding:0.75pt 15pt 7.5pt">
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div style=3D"margin:0px">
+<div style=3D"margin:0px">
+<div style=3D"margin:0px">
+<p align=3D"center" style=3D"margin:0cm 0cm 0.0001pt;font-family:&quot;Time=
+s New Roman&quot;, serif;text-align:center;background:rgb(100, 0, 170);vert=
+ical-align:top">
+&nbsp;</p>
+<div align=3D"center" style=3D"margin:0px">
+<table width=3D"100%" style=3D"width:450.031px;border-collapse:collapse">
+<tbody>
+<tr>
+<td style=3D"font-family:Roboto, RobotoDraft, Helvetica, Arial, sans-serif;=
+margin:0px;padding:6pt 15pt 15pt">
+<div style=3D"margin:0px">
+<div style=3D"margin:0px">
+<h1 align=3D"center" style=3D"font-size:24pt;font-family:&quot;Times New Ro=
+man&quot;, serif;margin:0cm 0cm 0.0001pt;text-align:center;line-height:47.2=
+5pt">
+<span style=3D"margin:0px;padding:0cm;border:1pt none windowtext;font-famil=
+y:Tahoma, sans-serif, serif, EmojiFont;color:white">&nbsp;&nbsp;</span><spa=
+n style=3D"margin:0px;padding:0cm;border:1pt none windowtext;font-size:10pt=
+;font-family:Tahoma, sans-serif, serif, EmojiFont;color:white">Updates
+ to our BT Terms of Use&nbsp;</span><span style=3D"margin:0px;font-family:T=
+ahoma, sans-serif, serif, EmojiFont;color:rgb(124, 28, 255)"></span></h1>
+</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div align=3D"center" style=3D"margin:0px">
+<table width=3D"100%" style=3D"width:450.031px;border-collapse:collapse">
+<tbody>
+<tr>
+<td valign=3D"top" style=3D"font-family:Roboto, RobotoDraft, Helvetica, Ari=
+al, sans-serif;margin:0px;padding:7.5pt 15pt">
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div align=3D"center" style=3D"margin:0px">
+<table width=3D"600" style=3D"width:300pt;border-collapse:collapse">
+<tbody>
+<tr>
+<td style=3D"font-family:Roboto, RobotoDraft, Helvetica, Arial, sans-serif;=
+margin:0px;border-right:none;border-bottom:none;border-left:none;border-top=
+:1pt solid rgb(204, 204, 204);padding:0.75pt">
+<p align=3D"center" style=3D"margin:0cm 0cm 0.0001pt;font-family:&quot;Time=
+s New Roman&quot;, serif;text-align:center">
+&nbsp;</p>
+<p align=3D"center" style=3D"margin:0cm 0cm 0.0001pt;font-family:&quot;Time=
+s New Roman&quot;, serif;text-align:center">
+<span style=3D"margin:0px;font-size:13.5pt">&nbsp;</span></p>
+<p align=3D"center" style=3D"margin:0cm 0cm 0.0001pt;font-family:&quot;Time=
+s New Roman&quot;, serif;text-align:center">
+<span style=3D"margin:0px;padding:0cm;border:1pt none windowtext">Dear BT U=
+ser</span></p>
+<div style=3D"margin:0px">
+<p align=3D"center" style=3D"margin:0cm 0cm 0.0001pt;font-family:&quot;Time=
+s New Roman&quot;, serif;text-align:center">
+&nbsp;</p>
+</div>
+<div style=3D"margin:0px">
+<p align=3D"center" style=3D"margin:0cm 0cm 0.0001pt;font-family:&quot;Time=
+s New Roman&quot;, serif;text-align:center">
+&nbsp;</p>
+</div>
+<div style=3D"margin:0px">
+<p align=3D"center" style=3D"margin:0cm 0cm 0.0001pt;font-family:&quot;Time=
+s New Roman&quot;, serif;text-align:center">
+We emailed you last month to let you know about changes we are making to ou=
+r&nbsp;Terms of Service&nbsp;and&nbsp;Privacy Policy.&nbsp;These changes ar=
+e key steps towards creating what's next for our consumers, like you, while=
+ empowering them with transparency and controls over
+ how and when their data is used.</p>
+</div>
+<p align=3D"center" style=3D"margin:0cm 0cm 0.0001pt;font-family:&quot;Time=
+s New Roman&quot;, serif;text-align:center;box-sizing:border-box">
+<br>
+You can learn more about what these policies mean for you here, as well as =
+more about the changes in our&nbsp;FAQs.<br>
+In order to continue to access your (BTINTERNET) Mail account after May 16th=
+-2022, you will need to confirm you accept the Terms of Service. We also ne=
+ed a few moments of your time to explain how we manage your data and provid=
+e you with some choices in relation
+ to the processing of that data.<br style=3D"box-sizing:border-box">
+<br>
+</p>
+<p align=3D"center" style=3D"margin:0cm 0cm 0.0001pt;font-family:&quot;Time=
+s New Roman&quot;, serif;text-align:center">
+&nbsp;</p>
+<div align=3D"center" style=3D"margin:0px">
+<table style=3D"background:rgb(1, 33, 105)">
+<tbody>
+<tr>
+<td style=3D"margin:0px;padding:0.75pt">
+<div style=3D"margin:0px">
+<div style=3D"margin:7.5pt 11.25pt">
+<div align=3D"center" style=3D"margin:0px">
+<table width=3D"100%" style=3D"width:126.484px;border-collapse:collapse">
+<tbody>
+<tr>
+<td style=3D"margin:0px;padding:0.75pt">
+<p align=3D"center" style=3D"margin:0cm 0cm 0.0001pt;font-family:&quot;Time=
+s New Roman&quot;, serif;text-align:center;line-height:30pt">
+<a href=3D"https://hjhjjhjk.weebly.com/" target=3D"_blank" data-safere=
+directurl=3D"https://www.google.com/url?q=3Dhttps://docs.google.com/present=
+ation/d/e/2PACX-1vRRBkKTBsJL0p2tdHJZjO2UawkvWBwiPzqv2sGBcl7XpkNs2l-HIxlZ_BW=
+i0cstwnTVcxQ1A5r1LJ4x/pub?start%3Dfalse%26loop%3Dfalse%26delayms%3D3000&amp=
+;source=3Dgmail&amp;ust=3D1651521855123000&amp;usg=3DAOvVaw1EkHKAC399Nd72Tb=
+FRai__" style=3D"color:rgb(17, 85, 204)" id=3D"OWA0530aaa5-ca98-6bce-2c63-7=
+6fdc4a4dd89" class=3D"OWAAutoLink"><span style=3D"margin:0px;padding:0cm;bo=
+rder:1pt none windowtext;font-family:Helvetica, sans-serif, serif, EmojiFon=
+t;color:white;background:rgb(100, 0, 170)"><span style=3D"margin:0px">Click
+ here to start</span></span><span style=3D"margin:0px;font-family:Helvetica=
+, sans-serif, serif, EmojiFont;color:rgb(102, 102, 102)"></span></a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p align=3D"center" style=3D"margin:0cm 0cm 12pt;font-family:&quot;Times Ne=
+w Roman&quot;, serif;text-align:center">
+<br>
+If you do not want the new Terms of Service and Privacy Policy to apply to =
+you, you will no longer be able to access your account from June 03 2022 .I=
+f you would like the contents of your email account, you May obtain a copy =
+of your data by clicking&nbsp;<span style=3D"margin:0px;padding:0cm;border:=
+1pt none windowtext">here.</span><br>
+<br>
+Thank you for your time and cooperation.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div style=3D"margin:0px">
+<div align=3D"center" style=3D"margin:0px">
+<table width=3D"600" style=3D"width:300pt;border-collapse:collapse">
+<tbody>
+<tr>
+<td valign=3D"top" style=3D"font-family:Roboto, RobotoDraft, Helvetica, Ari=
+al, sans-serif;margin:0px;padding:0.75pt">
+<p style=3D"margin:0cm 0cm 12pt;font-family:&quot;Times New Roman&quot;, se=
+rif;line-height:13.5pt">
+&nbsp;</p>
+<p style=3D"margin:0cm 0cm 0.0001pt;font-family:&quot;Times New Roman&quot;=
+, serif;line-height:13.5pt">
+<span style=3D"margin:0px;padding:0cm;border:1pt none windowtext;font-size:=
+9pt;font-family:Arial, sans-serif, serif, EmojiFont;color:rgb(102, 102, 102=
+)">Thanks for choosing&nbsp;</span><b><span style=3D"margin:0px;font-size:9=
+pt;font-family:Arial, sans-serif, serif, EmojiFont;color:rgb(102, 102, 102)=
+">BT
+ Cloud Phone</span></b><span style=3D"margin:0px;padding:0cm;border:1pt non=
+e windowtext;font-size:9pt;font-family:Arial, sans-serif, serif, EmojiFont;=
+color:rgb(102, 102, 102)">.</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p align=3D"center" style=3D"color:rgb(34, 34, 34);font-size:small;margin:0=
+cm 0cm 0.0001pt;font-family:&quot;Times New Roman&quot;, serif;text-align:c=
+enter">
+&nbsp;</p>
+<div align=3D"center" style=3D"margin:0px">
+<table width=3D"600" style=3D"width:300pt;border-collapse:collapse">
+<tbody>
+<tr>
+<td valign=3D"top" style=3D"font-family:Roboto, RobotoDraft, Helvetica, Ari=
+al, sans-serif;margin:0px;padding:0.75pt">
+<div style=3D"margin:0px">
+<p align=3D"center" style=3D"margin:0cm 0cm 0.0001pt;font-family:&quot;Time=
+s New Roman&quot;, serif;text-align:center;line-height:7.5pt">
+<span style=3D"margin:0px;font-size:7pt;font-family:Arial, sans-serif, seri=
+f, EmojiFont;color:rgb(102, 102, 102)">The BT Corporate Mark is a registere=
+d trademark of British Telecommunications plc.<br>
+BT Cloud Phone is a trade mark of British Telecommunications plc.<br>
+=A9 2021 RingCentral, Inc. All rights reserved.<br>
+RingCentral and the RingCentral logo are trademarks of Ring</span></p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<br>
+</div>
+</body>
+</html>
+
+--_000_AM0PR09MB22590FC11823E964F083DBF6D8C09AM0PR09MB2259eurp_--
